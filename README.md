@@ -3,15 +3,16 @@
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.12-blue.svg?longCache=true)]()
 [![PyPI](https://img.shields.io/pypi/v/async-flow-control.svg)](https://pypi.python.org/pypi/assign-flow-control)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![changelog](https://img.shields.io/badge/change-log-blue)](CHANGES.md)
 [![Python Tests](https://github.com/paulovn/async-flow-control/actions/workflows/async-flow-control-PR.yml/badge.svg)](https://github.com/paulovn/async-flow-control/actions/workflows/async-flow-control-PR.yml)
 
 Distribute task execution across time in an asyncio environment, so as to apply
 flow control policies.
 
-This started as a fork of [throttler]. It has now diverged heavily from it in some
-parts, but its main purpose is still to provide tools that allow to control the
-execution of coroutines across time, limiting by different criteria (e.g. task rate
-or concurrent execution).
+This started as a fork of [throttler]. It has now diverged heavily from it in
+some parts, but its main purpose is still to provide tools (Python classes)
+that allow to control the execution of coroutines across time, limiting by
+different criteria (e.g. task rate or concurrent execution).
 
 
 ## Install
@@ -21,6 +22,9 @@ Just
 pip install async-flow-control
 ```
 The package has no dependencies.
+
+To build the wheel package from source, a `Makefile` is provided. Just use
+`make pkg`
 
 
 ## Usage
