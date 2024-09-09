@@ -12,8 +12,14 @@ from src.async_flow_control import __version__, __license__
 MIN_PYTHON_VERSION = (3, 8)
 PKGNAME = 'async-flow-control'
 GITHUB_URL = 'https://github.com/paulovn/' + PKGNAME
-DESC = '''
-Throttle tasks to spread execution across time and implement flow control, in an asyncio environment
+DESC = f'''
+Throttle tasks to spread execution across time and implement flow control, in an asyncio environment.
+
+This package provides Python classes that allow to control the execution of
+coroutines across time, limiting by different criteria (e.g. task rate or concurrent
+execution).
+
+See package documentation at the [GitHub repository](https://github.com/paulovn/{PKGNAME})
 '''
 
 # --------------------------------------------------------------------
